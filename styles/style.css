@@ -36,8 +36,6 @@
 }
 
 
-
-
 .header__theme-menu-button {
   text-transform: lowercase;
   color: var(--accent-color);
@@ -54,29 +52,28 @@
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
-  color: #DB00FF;
+  color: var(--header-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   
 }
 
 .header__text {
-  ;
+  color: var(--main-color);
   font-weight: bold;
-
 }
 
 
 .header__rec {
   position: absolute;
-  display: flex;
+  display: var(--rec);
   align-items: center;
   gap: var(--gap-main);
   right: 19px;
   top: 10px;
   text-transform: uppercase;
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .header__rec::after {
@@ -92,22 +89,104 @@
 
 .decorated-zone::before {
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 1.565rem;
+  height: 1.565rem;
   position: absolute;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--frame-color);
   bottom: 0.625rem;
   left: 0.625rem;
 }
 
 .decorated-zone::after {
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 1.565rem;
+  height: 1.565rem;
   position: absolute;
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-color: var(--frame-color);
   top: 0.625rem;
   right: 0.625rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width >= 768px) {
+  .header {
+    padding: 1.25rem;
+    padding-left: 0;
+  }
+
+  .header__text {
+    justify-self: end;
+    width: calc(50vw - 1.25rem);
+  }
+
+  .decorated-zone::before {
+    bottom: 1.25rem;
+    left: 1.25rem;
+  }
+
+  .decorated-zone::after {
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .header__rec {
+    right: 29px;
+    top: 20px;
+  }
+
+}
+
+
+
+
+
+  @media (width >= 1024px) {
+
+    .header {
+      padding: 0;
+    }
+
+    .header__theme-menu {
+      align-self: start;
+      justify-self: center;
+      margin-top: 1.25rem;
+    }
+
+    .header__theme-menu-list {
+      flex-direction: row;
+    }
+
+    .header__text {
+      margin-right: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+
+
+
+
+
+
+
+
+  }
+
+

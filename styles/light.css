@@ -5,6 +5,8 @@
 */
 
 
+
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -12,7 +14,32 @@
   */
   --accent-color: #FF8DCB;
   --content-color: #353430;
+  --header-color: #FFC2E6;
+  --frame-color: #353430;
+  --main-color: #353430;
   --accent-text: #FFC2E6;
-  --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;  
+  --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
+  --rec: none;
+  
 }
 
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #FF8DCB;
+  --content-color: #353430;
+  --header-color: #FFC2E6;
+  --frame-color: #353430;
+  --main-color: #353430;
+  --accent-text: #FFC2E6;
+  --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
+  --rec: none;
+  }
+}
