@@ -2,4 +2,112 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font-main);
+  background: var(--background);
+  font-size: 1.125rem;
+  
+  
+}
+
+.colored {
+  background-color: var(--accent-color);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  padding: .625rem;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-main);
+  text-transform: lowercase;
+}
+
+
+
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  color: var(--accent-color);
+  padding: .094rem .8125rem .25rem;
+  line-height: 1.125rem;
+  background: transparent;
+  border: 1px solid transparent;
+  
+  
+}
+
+.header__theme-menu-button_active {
+  border-color: currentColor;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  
+}
+
+.header__text {
+  ;
+  font-weight: bold;
+
+}
+
+
+.header__rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-main);
+  right: 19px;
+  top: 10px;
+  text-transform: uppercase;
+  color: var(--accent-color)
+}
+
+.header__rec::after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+
+.decorated-zone::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  bottom: 0.625rem;
+  left: 0.625rem;
+}
+
+.decorated-zone::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  top: 0.625rem;
+  right: 0.625rem;
 }
