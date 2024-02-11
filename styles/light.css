@@ -34,9 +34,19 @@
   --frame-color: #353430;
   --main-color: #353430;
   --accent-text: #FFC2E6;
-  --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
   --bg-color: #FFF1F7;
   --rec: none;
   }
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .decorative-element {
+    display: none;
+  }
+}
+
+.page.theme_light .decorative-element {
+  display: none;
 }
 
