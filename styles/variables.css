@@ -9,7 +9,7 @@
   --header-color: #DB00FF;
   --frame-color: #FF0070;
   --main-color: #000028;
-  --background: url(../images/cover-image-dark.png) center/cover no-repeat fixed;
+  --bg-color: #000028;
   --font-main: "IBM Plex mono", monospace;
   --accent-text: #000028;
   --rec: flex;

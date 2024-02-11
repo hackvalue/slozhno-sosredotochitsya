@@ -1,16 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    --accent-color: #FF0070;
-    --content-color: #F1B2CE;
-    --header-color: #DB00FF;
-    --frame-color: #FF0070;
-    --main-color: #000028;
-    --background: url(../images/cover-image-dark.png) center/cover no-repeat fixed;
-    --font-main: "IBM Plex mono", monospace;
-    --accent-text: #000028;
-    --rec: flex;
-    background: var(--background);
+    background-color: var(--bg-color);
+    background-image: url(../images/cover-image-dark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
 .title-decor {
