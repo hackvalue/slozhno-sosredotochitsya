@@ -19,7 +19,9 @@
   --main-color: #353430;
   --accent-text: #FFC2E6;
   --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
+  --bg-color: #FFF1F7;
   --rec: none;
+  background-color: var(--bg-color);
 }
 
 :root.theme_light {
@@ -30,6 +32,7 @@
   --main-color: #353430;
   --accent-text: #FFC2E6;
   --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
+  --bg-color: #FFF1F7;
   --rec: none;
 }
 
@@ -42,6 +45,7 @@
   --main-color: #353430;
   --accent-text: #FFC2E6;
   --background: url(../images/cover-image-light.png) center/cover no-repeat fixed;
+  --bg-color: #FFF1F7;
   --rec: none;
   }
 }
