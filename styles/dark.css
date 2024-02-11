@@ -22,7 +22,7 @@
   --rec: flex;
 }
 
-:root.page.theme_dark {
+:root.theme_dark {
   --accent-color: #FF0070;
   --content-color: #F1B2CE;
   --header-color: #DB00FF;

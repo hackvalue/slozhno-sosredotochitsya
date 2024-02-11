@@ -55,10 +55,6 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: currentColor;
-}
-
-.header__theme-menu-button_active {
   border: 1px solid var(--frame-color);
   pointer-events: none;
 }
@@ -69,7 +65,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255, 0, 112, .4); 
+  border: 1px solid rgb(255, 0, 112, .4);
 }
 
 .header__title {
