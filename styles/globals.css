@@ -35,8 +35,19 @@ picture {
 
 button,
 a {
+  outline: none;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+a:focus-visible {
+  border: 1px solid currentColor;
 }
