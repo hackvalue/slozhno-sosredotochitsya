@@ -21,17 +21,7 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-:root.theme_light {
-  --accent-color: #ff8dcb;
-  --content-color: #353430;
-  --header-color: #ffc2e6;
-  --frame-color: #353430;
-  --main-color: #353430;
-  --accent-text: #ffc2e6;
-  --bg-color: #fff1f7;
-  --rec: none;
-  --hover-color: rgb(53, 52, 48, 0.4);
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {

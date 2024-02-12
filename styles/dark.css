@@ -22,15 +22,3 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-:root.theme_dark {
-  --accent-color: #ff0070;
-  --content-color: #f1b2ce;
-  --header-color: #db00ff;
-  --frame-color: #ff0070;
-  --main-color: #000028;
-  --font-main: "IBM Plex mono", monospace;
-  --accent-text: #000028;
-  --bg-color: #000028;
-  --rec: flex;
-  --hover-color: rgb(255, 0, 112, 0.4);
-}

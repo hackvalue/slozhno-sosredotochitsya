@@ -39,7 +39,7 @@
 
 .header__theme-menu-button {
   text-transform: lowercase;
-  color: var(--accent-color);
+  color: var(--frame-color);
   padding: 0 0 3px;
   height: 26px;
   width: 70px;
