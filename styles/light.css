@@ -16,12 +16,11 @@
   --main-color: #353430;
   --accent-text: #ffc2e6;
   --bg-color: #fff1f7;
+  --font-main: "IBM Plex mono", monospace;
   --rec: none;
   --hover-color: rgb(53, 52, 48, 0.4);
   background-image: url(../images/cover-image-light.png);
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
