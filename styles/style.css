@@ -59,7 +59,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--frame-color);
+  border: 1px solid var(--hover-color);
 }
 
 .header__title {

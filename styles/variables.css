@@ -13,4 +13,5 @@
   --font-main: "IBM Plex mono", monospace;
   --accent-text: #000028;
   --rec: flex;
+  --hover-color: rgb(255, 0, 112, 0.4);
 }
