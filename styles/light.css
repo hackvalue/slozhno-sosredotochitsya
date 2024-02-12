@@ -43,7 +43,7 @@
     --accent-text: #ffc2e6;
     --bg-color: #fff1f7;
     --rec: none;
-    --hover-color: rgb(255, 194, 230, 0.4);
+    --hover-color: rgb(53, 52, 48, 0.4);
   }
   .page {
     background-image: url(../images/cover-image-light.png);
