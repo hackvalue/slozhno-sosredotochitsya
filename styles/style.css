@@ -1,13 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    background-color: var(--bg-color);
-    background-image: url(../images/cover-image-dark.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .title-decor {
   background-color: var(--accent-color);
@@ -20,6 +20,7 @@
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr;
   align-items: center;
+  min-block-size: 668px;
   block-size: 100vh;
   position: relative;
   padding: 10px;
@@ -86,17 +87,17 @@
 }
 
 .header__rec::after {
-  content: '';
+  content: "";
   display: block;
   width: 9px;
   height: 9px;
-  border-radius: 100%;
+  border-radius: 50%;
   background: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   position: absolute;
@@ -108,7 +109,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   position: absolute;
@@ -145,7 +146,8 @@
   color: var(--main-color);
 }
 
-.content__header, .content__header-what {
+.content__header,
+.content__header-what {
   color: var(--frame-color);
   font-size: 18px;
   margin-bottom: 20px;
@@ -177,7 +179,6 @@ a {
 
 .gallery {
   font-family: var(--font-main);
-  padding: 0 10px;
 }
 
 .gallery__box {
@@ -196,6 +197,7 @@ a {
 }
 
 .footer {
+  min-block-size: 668px;
   block-size: 100vh;
   position: relative;
   display: flex;
@@ -214,7 +216,6 @@ a {
 }
 
 @media (width >= 768px) {
-
   .header {
     padding: 20px;
     padding-left: 0;
@@ -246,38 +247,34 @@ a {
   .content__box {
     margin-bottom: 80px;
   }
-  
+
   .content__box:nth-of-type(1) {
     display: grid;
     grid-template-columns: minmax(236px, calc((100% - 40px) / 3)) auto;
     gap: 20px;
   }
-  
+
   .content__box:nth-of-type(3) {
     display: grid;
     grid-template-columns: minmax(236px, calc((100% - 40px) / 3)) auto;
     gap: 20px;
   }
-  
+
   .content__header-what {
     max-inline-size: 30%;
   }
-  
-  .gallery {
-    padding: 0 20px;
-  }
-  
+
   .gallery__box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-top: 20px;
   }
-  
+
   .container_horizontal {
     grid-column-start: span 2;
   }
-  
+
   .container_vertical {
     grid-row-start: span 2;
   }
@@ -313,19 +310,3 @@ a {
     column-gap: 20px;
   }
 }
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-  
-
-
